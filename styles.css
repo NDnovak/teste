@@ -5,7 +5,7 @@ h1 {
 }
 
 /* 5 */
-p: :first-letter {
+p:first-letter {
     text-transform: uppercase;
 }
 
@@ -29,9 +29,45 @@ h6 {
     text-align: center;
 }
 
-/* ct 4 */
-img {
-    display: block;
-    margin: auto;
-    max-width: 150px;
+/* pd 1*/
+.banner {
+    height: 300px;
+    width: 100%;
+    background-image: url(https://img.magnific.com/vetores-premium/poligono-azul-no-vetor-de-modelo-social-quadrado-de-fundo-escuro_53876-170115.jpg?semt=ais_hybrid&w=740&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 40px;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+}
+
+/* pd 2 */
+.hide {
+    display: none;
+}
+
+/* pd 3 */
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+/* all 1 */
+body {
+    padding: 20px;
+    margin: 20px;
+}
+
+/* all 2 */
+a:hover {
+    opacity: 0.5;
 }
