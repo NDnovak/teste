@@ -9,30 +9,134 @@
 </head>
 
 </body class="page-category-tvs">
+<header class="header">
+    <p>Venda de TVs e acessórios online</p>
+    <hav class="nav">
+        <ul>
+            <li>
+                <a href="./products.html">Produtos</a>
+            </li>
+            <li>
+                <a href="./category_tvs.html" target="_self">TVs</a>
+            </li>
+            <li>
+                <a href="./category_acessories.html" target="_self">Acessórios</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 <h1>categoria de produtos</h1>
-<h2>TVs</h2>
-<ol id="primary-list"></ol>
-<ul>
-    <li>
-        <img src="https://images.samsung.com/is/image/samsung/p6pim/br/qn75qn900fgxzd/gallery/br-qled-qn900f-qn75qn900fgxzd-548898808?$1164_776_PNG$" alt="TV 1" width="200">
-        <h3>TV Samsung 55"</h3>
-        <p>Preço: R$ 2.500,00</p>
-        <a href="https://www.samsung.com/br/tvs/qled-tv/qn900f-75-inch-neo-qled-8k-mini-led-smart-tv-qn75qn900fgxzd/" target="_blank">detalhes</a>
+    <ul class="products-list">
+        <li class="product">
+            <h3>samsung</h3>
+
+            <figure>
+                <img
+                    src="https://images.samsung.com/is/image/samsung/p6pim/br/qn75qn900fgxzd/gallery/br-qled-qn900f-qn75qn900fgxzd-548898808?$1164_776_PNG$"
+                    alt="TV Samsung 55"
+                    width="200"
+                >
+            </figure>
+
+            <p>
+                TV Samsung Smart
+            </p>
+            <p class="price">
+                <strong>Preço</strong>
+                <data value="2500">R$ 2.500,00</data>
+            </p>
+
+            <p class="installment">
+                <strong>Parcelamento</strong>
+                <data value="200">R$200,00</data> en 10x
+            </p>
+
+            <a href="https://www.samsung.com/br/tvs/qled-tv/qn900f-75-inch-neo-qled-8k-mini-led-smart-tv-qn75qn900fgxzd/" target="_blank" rel="noopener noreferrer">Ver mais</a>
+            
+        </li>
+
+        <li class="product">
+            <h3>LG</h3>
+
+            <figure>
+                <img
+                    src="https://www.lg.com/content/dam/channel/wcms/br/images/tv/qned73/1-1600-qned73.jpg/jcr:content/renditions/thum-1600x1062.jpeg?w=800"
+                    alt="TV LG 65"
+                    width="200"
+                >
+            </figure>
+
+            <p>
+                TV LG Smart
+            </p>
+            <p class="price">
+                <strong>Preço</strong>
+                <data value="3800">R$ 3.800,00</data>
+            </p>
+
+            <p class="installment">
+                <strong>Parcelamento</strong>
+                <data value="380">R$380,00</data> em 10x
+            </p>
+
+            <a href="https://www.lg.com/br/tvs-e-soundbars/qned/55qned73asa/" target="_blank" rel="noopener noreferrer">Ver mais</a>
+        </li>
     </li>
-    <li>
-        <img src="https://www.lg.com/content/dam/channel/wcms/br/images/tv/qned73/1-1600-qned73.jpg/jcr:content/renditions/thum-1600x1062.jpeg?w=800" alt="TV 2" width="200">
-        <h3>TV LG 65"</h3>
-        <p>Preço: R$ 3.800,00</p>
-        <a href="https://www.lg.com/br/tvs-e-soundbars/qned/55qned73asa/" target="_blank">detalhes</a>
-    </li>
-    <li>
-        <img src="https://www.sony.com.br/image/4adc44bba5a933a4ed3a601f51a21251?fmt=png-alpha&wid=1578&hei=1050&bgcolor=F6F9FF" alt="TV 3" width="200">
-        <h3>TV Sony 75"</h3>
-        <p>Preço: R$ 5.200,00</p>
-        <a href="https://www.sony.com.br/electronics/televisores/xbr-x900f-series" target="_blank">detalhes</a>
-        <br>
-        <br>
-        <button onclick="history.back()">Voltar</button>
-    </li>
-    </ol>
+
+    <li class="product">
+        <h3>Sony</h3>
+
+        <figure>
+            <img
+                src="https://www.sony.com.br/image/4adc44bba5a933a4ed3a601f51a21251?fmt=png-alpha&wid=1578&hei=1050&bgcolor=F6F9FF"
+                alt="TV Sony 75"
+                width="200"
+            >
+        </figure>
+
+        <p>
+            TV Sony Smart
+        </p>
+        <p class="price">
+            <strong>Preço</strong>
+            <data value="5200">R$ 5.200,00</data>
+        </p>
+
+        <p class="installment">
+            <strong>Parcelamento</strong>
+            <data value="520">R$520,00</data> em 10x
+        </p>
+
+        <a href="https://www.sony.com.br/electronics/televisores/xbr-x900f-series" target="_blank" rel="noopener noreferrer">Ver mais</a>
+    </ul>
+    
+<style>
+/* ct 2 flex container */
+.products-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 10px;
+
+}
+
+/* ct 3 flex items */
+.product {
+    text-align: center;
+    border: 1px solid #ccc;
+    flex-basis: 40%;
+    padding:20px;
+    box-sizing: border-box;
+}
+/* ct 4 */
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+
+
+    
 </html>
